@@ -1,0 +1,23 @@
+[debug] [2021-08-20T17:06:10.877Z] ----------------------------------------------------------------------
+[debug] [2021-08-20T17:06:10.879Z] Command:       /usr/local/Cellar/node/15.14.0/bin/node /usr/local/bin/firebase deploy --only functions
+[debug] [2021-08-20T17:06:10.879Z] CLI Version:   8.16.2
+[debug] [2021-08-20T17:06:10.879Z] Platform:      darwin
+[debug] [2021-08-20T17:06:10.880Z] Node Version:  v15.14.0
+[debug] [2021-08-20T17:06:10.881Z] Time:          Fri Aug 20 2021 17:06:10 GMT+0000 (Greenwich Mean Time)
+[debug] [2021-08-20T17:06:10.881Z] ----------------------------------------------------------------------
+[debug] [2021-08-20T17:06:10.881Z] 
+[debug] [2021-08-20T17:06:10.888Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-20T17:06:10.889Z] > authorizing via signed-in user
+[debug] [2021-08-20T17:06:10.889Z] [iam] checking project drug-distribution-system for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2021-08-20T17:06:10.891Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-08-20T17:06:10.892Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-20T17:06:32.666Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2021-08-20T17:06:32.667Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-08-20T17:06:32.668Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-20T17:06:42.964Z] [functions] service account IAM check errored, deploy may fail: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci {"name":"FirebaseError","children":[],"exit":1,"message":"Authentication Error: Your credentials are no longer valid. Please run \u001b[1mfirebase login --reauth\u001b[22m\n\nFor CI servers and headless environments, generate a new token with \u001b[1mfirebase login:ci\u001b[22m","status":500}

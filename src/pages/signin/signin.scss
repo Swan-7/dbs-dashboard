@@ -1,0 +1,66 @@
+@import '../../stylesheets/sass/general';
+
+.sign-in-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.sign-in-container>* {
+    flex: 1 100%;
+    display: flex;
+}
+
+.sign-in-container-one {
+    justify-content: center;
+    align-items: center;
+    background-color: #634BDC;
+}
+
+.sign-in-container-two {
+    flex-direction: column;
+    padding: 0.5em 0.5em;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    overflow-y: auto;
+
+}
+
+.sign-in-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-in-form>* {
+    // flex: 1 100%;
+    display: flex;
+    // justify-content: space-between;
+    // gap: 1.5em;
+    margin-bottom: 1em;
+}
+
+.sign-in-button-container {
+    margin-top: 1em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sign-in-button-container>* {
+    flex: 1;
+}
+
+@include media-breakpoint-down('md') {
+    .sign-in-container-one {
+        display: none;
+    }
+}
+
+.sign-in-sign-container {
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}

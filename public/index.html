@@ -24,7 +24,9 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <title>DBS</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +41,28 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-storage.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDdVYOnVoFhyJziRMSBwSUzUNlhPdnBQwQ",
+    authDomain: "solar-campus-b542c.firebaseapp.com",
+    projectId: "solar-campus-b542c",
+    storageBucket: "solar-campus-b542c.appspot.com",
+    messagingSenderId: "672032632816",
+    appId: "1:672032632816:web:1b55c70362f8335d59f735",
+    measurementId: "G-XGWF2NTNXT"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   </body>
 </html>
