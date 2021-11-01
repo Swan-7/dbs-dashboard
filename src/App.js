@@ -293,6 +293,7 @@ function App() {
           <ListItem
             button
             onClick={() => {
+              
               auth
                 .signOut()
                 .then(() => {
@@ -301,6 +302,7 @@ function App() {
                     message: "User signed out successfully",
                     show: true,
                   });
+                  
                   setTimeout(() => {
                     history.replace("/signin");
                   }, 2500);
